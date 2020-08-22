@@ -21,7 +21,8 @@ public class UserServiceImpl implements IUserService {
             return false;
         }
 
-        if(DigestUtils.md5Hex(user.getPassword()).equals(userFormDataBase.getPassword())) {
+        if(DigestUtils.md5Hex(user.getPassword())
+                .equals(userFormDataBase.getPassword())) {
             return true;
         } else {
             return false;
@@ -31,5 +32,16 @@ public class UserServiceImpl implements IUserService {
     @Override
     public void addUser(User user) {
         userDAO.addUser(user);
+    }
+
+    @Override
+    public boolean registerUser(User user, String repeatedPassword) {
+        if(!user.getPassword().equals(repeatedPassword)) {
+            return false;
+        }
+
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+        this.userDAO.addUser(user);
+        return true;
     }
 }
