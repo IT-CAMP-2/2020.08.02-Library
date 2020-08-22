@@ -31,7 +31,7 @@ public class AppConfiguration {
                 = new FilterRegistrationBean<>();
 
         registrationBean.setFilter(new UserFilter());
-        registrationBean.addUrlPatterns("/main", "/register");
+        registrationBean.addUrlPatterns("/main/*", "/register");
 
         return registrationBean;
     }*/

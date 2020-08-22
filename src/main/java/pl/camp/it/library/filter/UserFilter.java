@@ -14,7 +14,8 @@ public class UserFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         this.sessionObject = WebApplicationContextUtils.
-                getRequiredWebApplicationContext(filterConfig.getServletContext()).getBean(SessionObject.class);
+                getRequiredWebApplicationContext(filterConfig.getServletContext())
+                .getBean(SessionObject.class);
     }
 
     @Override

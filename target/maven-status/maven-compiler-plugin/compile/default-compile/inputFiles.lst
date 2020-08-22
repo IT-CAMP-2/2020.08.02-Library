@@ -1,7 +1,10 @@
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/services/impl/UserServiceImpl.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/services/impl/BookServiceImpl.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/services/IBookService.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/AppConfiguration.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/model/Book.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/App.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/dao/IBookDAO.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/filter/UserFilter.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/model/Author.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/model/User.java
@@ -13,3 +16,4 @@
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/controllers/CommonController.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/controllers/UserController.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/session/SessionObject.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/main/java/pl/camp/it/library/dao/impl/BookDAOImpl.java
