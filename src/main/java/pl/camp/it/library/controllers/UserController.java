@@ -1,5 +1,6 @@
 package pl.camp.it.library.controllers;
 
+import org.hibernate.event.spi.SaveOrUpdateEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +13,8 @@ import pl.camp.it.library.services.IUserService;
 import pl.camp.it.library.session.SessionObject;
 
 import javax.annotation.Resource;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Controller
 public class UserController {
@@ -32,6 +35,12 @@ public class UserController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(@ModelAttribute User user,
                            @RequestParam String password2) {
+        Pattern compiledPattern = Pattern.compile(".*[0-9]+.*");
+        Matcher matcher = compiledPattern.matcher(user.getPassword());
+        matcher.matches();
+        System.out.println(user.getPassword());
+        System.out.println(matcher.matches());
+
         boolean registerResult =
                 this.userService.registerUser(user, password2);
 

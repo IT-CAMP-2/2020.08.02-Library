@@ -38,6 +38,7 @@ public class AdminController {
         Book book1 = new Book();
         book1.setIsbn("374563SG");
         book1.setTitle("Sekrety włoskiej kuchni. Dlaczego Włosi lubią rozmawiać o jedzeniu?");
+        book1.setCategory(Book.Category.COOKING);
 
         Author author1 = new Author();
         author1.setName("Elena");
@@ -48,6 +49,7 @@ public class AdminController {
         Book book2 = new Book();
         book2.setIsbn("8735687SDFGSD");
         book2.setTitle("Chleb. Techniki wypieku, przepisy, wskazówki.");
+        book2.setCategory(Book.Category.COOKING);
 
         Author author2 = new Author();
         author2.setName("Jeffrey");
@@ -58,6 +60,7 @@ public class AdminController {
         Book book3 = new Book();
         book3.setIsbn("8746sdfg745");
         book3.setTitle("Lunchbox na każdy dzień. Przepisy inspirowane japońskim bento.");
+        book3.setCategory(Book.Category.COOKING);
 
         Author author3 = new Author();
         author3.setName("Malwina");
@@ -68,6 +71,7 @@ public class AdminController {
         Book book4 = new Book();
         book4.setIsbn("27635DFG263");
         book4.setTitle("Moje wypieki i desery");
+        book4.setCategory(Book.Category.BAKING);
 
         Author author4 = new Author();
         author4.setName("Dorota");
@@ -78,6 +82,7 @@ public class AdminController {
         Book book5 = new Book();
         book5.setIsbn("346853shgdf476");
         book5.setTitle("Moje wypieki i desery. Dla dzieci");
+        book5.setCategory(Book.Category.BAKING);
 
         book5.setAuthor(author4);
 

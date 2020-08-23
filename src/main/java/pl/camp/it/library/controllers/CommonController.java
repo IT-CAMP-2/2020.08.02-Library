@@ -28,6 +28,7 @@ public class CommonController {
 
         List<Book> books = this.bookService.getAllBooks();
         model.addAttribute("books", books);
+        this.sessionObject.setLastAddress("/main");
         return "main";
     }
 
@@ -35,4 +36,45 @@ public class CommonController {
     public String defaultRedirect() {
         return "redirect:/main";
     }
+
+    @RequestMapping(value = "/find", method = RequestMethod.POST)
+    public String findBooks(Model model, @RequestParam String pattern) {
+        model.addAttribute("isLogged", (sessionObject.getUser() != null));
+        List<Book> books = this.bookService.findBooks(pattern);
+        this.sessionObject.setLastFindPattern(pattern);
+        model.addAttribute("books", books);
+        this.sessionObject.setLastAddress("/find");
+        return "main";
+    }
+
+    @RequestMapping(value = "/find", method = RequestMethod.GET)
+    public String findBooksAfterRedirect(Model model) {
+        model.addAttribute("isLogged", (sessionObject.getUser() != null));
+        List<Book> books = this.bookService.findBooks(sessionObject.getLastFindPattern());
+        model.addAttribute("books", books);
+        this.sessionObject.setLastAddress("/find");
+        return "main";
+    }
+
+    @RequestMapping(value = "/cooking", method = RequestMethod.GET)
+    public String cookingBooks(Model model) {
+        model.addAttribute("isLogged", (sessionObject.getUser() != null));
+        List<Book> books = this.bookService
+                .getBooksByCategory(Book.Category.COOKING);
+        model.addAttribute("books", books);
+        this.sessionObject.setLastAddress("/cooking");
+        return "main";
+    }
+
+    @RequestMapping(value = "/baking", method = RequestMethod.GET)
+    public String bakingBooks(Model model) {
+        model.addAttribute("isLogged", (sessionObject.getUser() != null));
+        List<Book> books = this.bookService
+                .getBooksByCategory(Book.Category.BAKING);
+        model.addAttribute("books", books);
+        this.sessionObject.setLastAddress("/baking");
+        return "main";
+    }
+
+
 }

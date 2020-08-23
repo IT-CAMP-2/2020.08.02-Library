@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Księgarnia</title>
     <link rel="stylesheet" type="text/css" href="register.css">
+    <script src="validator.js"></script>
 </head>
 <body>
 <form id="register-form" method="POST" th:object="${user}">
     <input type="text" placeholder="login" th:field="*{login}"><br/>
-    <input type="password" placeholder="hasło" th:field="*{password}"><br/>
+    <input type="password" placeholder="hasło" th:field="*{password}" id="passwordField"><br/>
     <input type="password" placeholder="powtórz hasło" name="password2"><br/>
     <input type="submit" value="OK">
 </form>
