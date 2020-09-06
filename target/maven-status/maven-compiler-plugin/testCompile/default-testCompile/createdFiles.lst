@@ -1,1 +1,7 @@
+pl/camp/it/library/dao/impl/test/UserDAOStub.class
+pl/camp/it/library/services/impl/BookServiceImplTest.class
+pl/camp/it/library/services/impl/BasketServiceImplTest.class
+pl/camp/it/library/dao/impl/test/AuthorDAOStub.class
+pl/camp/it/library/AppConfigurationTest.class
+pl/camp/it/library/dao/impl/test/BookDAOStub.class
 pl/camp/it/library/services/impl/UserServiceImplTest.class

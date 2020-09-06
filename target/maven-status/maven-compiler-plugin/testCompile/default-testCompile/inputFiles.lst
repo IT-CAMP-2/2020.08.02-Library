@@ -1,1 +1,7 @@
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/AppConfigurationTest.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/services/impl/BookServiceImplTest.java
 /home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/services/impl/UserServiceImplTest.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/dao/impl/test/BookDAOStub.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/services/impl/BasketServiceImplTest.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/dao/impl/test/UserDAOStub.java
+/home/mateusz/ITCamp-Kraków#2/2020.02.08-library/src/test/java/pl/camp/it/library/dao/impl/test/AuthorDAOStub.java
